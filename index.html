@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aventura Épica</title>
+  <style>
+    /* Tela cheia com fundo */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
+
+    /* Fundo de aventura */
+    .fundo {
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb'); /* substitua pela sua imagem */
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transition: opacity 1s ease;
+    }
+
+    /* Tela inicial */
+    .tela-inicial {
+      text-align: center;
+      color: white;
+      padding: 50px;
+      border-radius: 15px;
+      background-color: rgba(0,0,0,0.6);
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      transition: opacity 1s ease;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px black;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #ff7f50;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff4500;
+    }
+
+    /* Conteúdo da aventura (inicialmente escondido) */
+    .aventura {
+      display: none;
+      color: white;
+      text-align: center;
+      padding: 50px;
+      background-color: rgba(0,0,0,0.5);
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fundo" id="fundo">
+    <div class="tela-inicial" id="telaInicial">
+      <h1>Aventura Épica</h1>
+      <button onclick="iniciarAventura()">Iniciar</button>
+    </div>
+  </div>
+
+  <div class="aventura" id="aventura">
+    <h2>Bem-vindo à sua jornada!</h2>
+    <p>A história começa aqui. Prepare-se para explorar terras misteriosas e enfrentar desafios épicos!</p>
+  </div>
+
+  <script>
+    function iniciarAventura() {
+      const tela = document.getElementById('telaInicial');
+      const fundo = document.getElementById('fundo');
+      const aventura = document.getElementById('aventura');
+
+      // Fade out da tela inicial
+      tela.style.opacity = 0;
+      setTimeout(() => {
+        fundo.style.display = 'none';
+        aventura.style.display = 'block';
+      }, 1000); // Espera 1 segundo para a transição
+    }
+  </script>
+
+</body>
+</html>
