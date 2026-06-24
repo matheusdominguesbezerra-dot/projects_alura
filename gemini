@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Digital Seguro</title>
+    <style>
+        /* Estilos Gerais focados em Acessibilidade */
+        :root {
+            --cor-fundo: #F9F9F9;
+            --cor-texto: #1A1A1A;
+            --cor-primaria: #0056B3;
+            --cor-segunda: #E6F0FA;
+            --cor-alerta: #D9381E;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Topo do Aplicativo */
+        header {
+            background-color: var(--cor-primaria);
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem; /* Letras bem grandes */
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.3rem;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+
+        /* Introdução */
+        .introducao {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #DDD;
+            margin-bottom: 25px;
+        }
+
+        .introducao p {
+            font-size: 1.4rem;
+            margin: 0;
+        }
+
+        /* Cartões de Dicas */
+        .dica-card {
+            background-color: white;
+            border: 3px solid var(--cor-primaria);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .dica-card h2 {
+            color: var(--cor-primaria);
+            font-size: 1.8rem;
+            margin-top: 0;
+            border-bottom: 2px solid var(--cor-segunda);
+            padding-bottom: 10px;
+        }
+
+        .dica-card p {
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        /* Destaques de Alerta */
+        .alerta {
+            background-color: #FFF3F3;
+            border-left: 8px solid var(--cor-alerta);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+
+        .alerta strong {
+            color: var(--cor-alerta);
+            font-size: 1.3rem;
+        }
+
+        /* Botão Grande de Ajuda */
+        .botao-ajuda {
+            display: block;
+            text-align: center;
+            background-color: var(--cor-alerta);
+            color: white;
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 40px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .botao-ajuda:hover, .botao-ajuda:focus {
+            background-color: #B3240E;
+            outline: 4px solid #000; /* Facilita a navegação por teclado */
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 30px 15px;
+            margin-top: 50px;
+            background-color: #DDD;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guia Digital Seguro</h1>
+        <p>Aprenda a navegar na internet com total segurança</p>
+    </header>
+
+    <main>
+        
+        <section class="introducao">
+            <p><strong>Olá!</strong> A internet é um lugar maravilhoso para conversar com a família e ver notícias. Criamos este guia simples para ajudar você a se proteger de enganações e usar seu celular ou computador sem medo.</p>
+        </section>
+
+        <article class="dica-card">
+            <h2>1. Mensagens de Parentes Pedindo Dinheiro</h2>
+            <p>Se algum filho, neto ou amigo mandar mensagem dizendo que mudou de número e precisa de dinheiro urgente, <strong>não envie nada na hora</strong>.</p>
+            <div class="alerta">
+                <strong>O que fazer:</strong> Ligue para o número antigo da pessoa ou faça uma chamada de vídeo para confirmar se é ela mesma antes de transferir qualquer valor.
+            </div>
+        </article>
+
+        <article class="dica-card">
+            <h2>2. Links e Promoções "Bom Demais para ser Verdade"</h2>
+            <p>Cuidado com mensagens no WhatsApp oferecendo brindes grátis, prêmios ou descontos exagerados de marcas conhecidas.</p>
+            <div class="alerta">
+                <strong>O que fazer:</strong> Não clique em links desconhecidos. Na dúvida, apague a mensagem. Empresas sérias não dão prêmios sem você ter participado de um sorteio.
+            </div>
+        </article>
+
+        <article class="dica-card">
+            <h2>3. Senhas Fortes e Seguras</h2>
+            <p>Evite usar sua data de nascimento, nome de netos ou sequências simples como "123456" para as suas senhas de banco ou redes sociais.</p>
+            <div class="alerta">
+                <strong>O que fazer:</strong> Misture letras maiúsculas, minúsculas, números e símbolos (como @ ou #). Nunca anote suas senhas em papéis guardados junto com o celular.
+            </div>
+        </article>
+
+        <article class="dica-card">
+            <h2>4. Ligações do Banco</h2>
+            <p>O banco nunca liga pedindo para você confirmar sua senha, nem pede para você transferir dinheiro para "corrigir um erro".</p>
+            <div class="alerta">
+                <strong>O que fazer:</strong> Se alguém ligar dizendo que é do banco e a conversa parecer estranha, desligue imediatamente. Procure o gerente da sua agência ou use o número que está atrás do seu cartão físico.
+            </div>
+        </article>
+
+        <a href="tel:190" class="botao-ajuda" aria-label="Botão para ligar para a polícia em caso de emergência">
+            🚨 Sofreu um golpe? Clique aqui para ligar para a Polícia (190)
+        </a>
+
+    </main>
+
+    <footer>
+        <p>Este aplicativo foi feito com carinho para a sua segurança. Compartilhe com seus amigos!</p>
+    </footer>
+
+</body>
+</html>
